@@ -1,0 +1,38 @@
+Get all products
+    GET http://localhost:8080/products
+
+Add product
+    POST http://localhost:8080/products
+
+    {
+      "name": "Apple",
+      "price": 150.00
+    }
+
+    {
+      "name": "Pineapple",
+      "price": 250.99
+    }
+
+    {
+      "name": "Dog",
+      "price": 2504.99
+    }
+
+Delete product
+    DELETE http://localhost:8080/products/<ID>
+
+
+Create order
+    POST http://localhost:8080/orders
+
+    {
+      "productIds": [1, 2, 3]
+    }
+
+Get all orders
+    GET http://localhost:8080/orders
+
+Get order by ID
+    GET http://localhost:8080/orders/<ID>
+
